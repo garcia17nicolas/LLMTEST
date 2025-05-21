@@ -1,5 +1,5 @@
 from openai import OpenAI
-client = OpenAI(api_key="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",
+client = OpenAI(api_key="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",
                 base_url="https://openrouter.ai/api/v1")
 
 message = input("Cual es tu pregunta? ")
@@ -11,7 +11,7 @@ prompt = (
 )
 
 completion = client.chat.completions.create(
-    model="cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+    model="meta-llama/llama-3.3-8b-instruct:free",
     messages = [
         {
           "role": "user", 
