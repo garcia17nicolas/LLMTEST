@@ -4,7 +4,7 @@ from interfases.chatinterfases import InputMessage
 
 
 router = APIRouter()
-client = OpenAI(api_key="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",
+client = OpenAI(api_key="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",
                 base_url="https://openrouter.ai/api/v1")
 @router.post("/ai-chat")
 def aiChat(data: InputMessage):
